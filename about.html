@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
@@ -301,121 +304,196 @@ ul li{
   color: white;
 }
 
+/* Basic styles */
+body {
+  font-family: arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+header, main, footer {
+  padding: 20px;
+}
+
+h1, h2, h3 {
+  margin: 10px 0;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+a:hover {
+  color: #333;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+/* Hero Section Styles */
+.hero {
+  text-align: center;
+  position: relative;
+}
+
+.hero h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.hero .btn {
+  background-color: white; /* Updated line for white button */
+  color: #000; /* Updated line for black text */
+  padding: 10px 20px;
+  border: 1px solid #000; /* New line for black border */
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+
+/* Story Section Styles */
+.story p {
+  line-height: 1.5;
+}
+
+/* Music Section Styles */
+.music audio {
+  width: 100%;
+  margin-top: 20px;
+}
+.fab.fa-facebook-square {
+  color: white; /* Change icon color to white */
+}
+
+
+/* Team Section Styles */
+.team {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.team .member {
+  width: calc(33% - 20px);
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.team .member img {
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+/* Connect With Us Section Styles */
+.connect {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.connect a {
+  font-size: 1.5em;
+  margin: 0 10px;
+  color: #000;
+}
+
+.connect a:hover {
+  color: #ccc;
+}
+
+.connect form {
+  margin-top: 20px;
+}
+
+.connect input[type="email"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 50%;
+}
+
+.connect button[type="submit"] {
+  background-color: #000;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+/* Footer Styles */
+footer {
+  text-align: center;
+  background-color: #f2f2f2;
+  padding: 10px 0;
+}
+.fa-facebook{
+    color: #1877F2;
+}
+.fa-instagram{
+    color : white;
+}
+
+.fa-youtube{
+    color: red;
+}
 
 
 
     </style>
 </head>
 <body>
-
+   
     <div class="topnav">
     
         <a href="about.html">About</a>
         <a href="album.html">Album</a>
         <a class="active" href="main.html">Home</a>
         
-        
-        
-       
       </div>
 
-      <h1>&nbsp&nbsp&nbsp&nbsp&nbsp Artists....</h1>
-    
+    <main>
+        <section class="hero">
+            <h1>Music that moves your soul.</h1>
+            <a href="album.html" class="btn">Listen Now</a>
+        </section>
 
-    <div class="cover">
-        <div class="subcover">
-      
-        </div>
-      
-        <div class="cover-image">
-            <a href="https://open.spotify.com/album/5t4ZtKPDT4r1ZPobRGIAyo">
-          <img src="sm.jpeg " width="200" height="200"></div>
-          <div class="text">
-            <h1>Shankar <br>Mahadevan</h1>
-            
-          </div>
-        </a>
-        </div>
-        
-        
-    </div>
+        <section class="story">
+            <h1>Our Story</h1>
+            <p><h3>Music has always been my passion. Growing up, I was inspired by legendary artists like Lata Mangeshkar and also by the incredible talent of the underrated Shilpa Rao. Her unique voice, powerful lyrics and innovative sound have always resonated with me. In 2018, I decided to pursue my dream of making music and haven't looked back since.</h3></p>
+            </section>
 
-    <div class="cover2">
-        <div class="subcover2">
-      
-        </div>
-      
-        <div class="cover-image2">
-            <a href="https://open.spotify.com/album/1WwkojG9sjMSrFVz4D51W0">
-          <img src="as.jpeg " width="200" height="200"></div>
-          <div class="text2">
-            <h1>Arijit Singh</h1>
-            
-          </div>
-        </a>
-        </div>
         
-        
-    </div>
 
-    <div class="cover3">
-        <div class="subcover3">
+           
+
+            <section class="connect">
+                
+                    <h2>Connect With Us</h2>
+                    <a href="https://www.facebook.com/bandpage/"> <i class="fa fa-facebook"></i> </a>
+                    <a href="https://www.instagram.com/your-profile"><i class="fa fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/your-channel"><i class="fa fa-youtube"></i></a>
+                    <p>Subscribe to our newsletter for updates and exclusive content!</p>
+                    <form action="subscribe.php" method="post">
+                      <input type="email" name="email" placeholder="Enter your email address">
+                      <button type="submit">Subscribe</button>
+                    </form>
+                
+              </section>
+    </main>
+
+    <footer>
+        <p style="color: black;">&copy; 2024 Riteeka Gawand</p>
+      </footer>
       
-        </div>
-      
-        <div class="cover-image3">
-            <a href="https://open.spotify.com/artist/1mYsTxnqsietFxj1OgoGbG">
-          <img src="ar.jpg " width="200" height="200"></div>
-          <div class="text3">
-            <h1>A.R. Rahman</h1>
-            
-          </div>
-        </a>
-        </div>
-        
-        
-    </div>
+</body>
+</html>
 
     
-    <div class="cover4">
-        <div class="subcover4">
-      
-        </div>
-      
-        <div class="cover-image4">
-            <a href="https://open.spotify.com/album/0TKg5tmAFIIC6iytdXXiM2">
-          <img src="am.jpg " width="200" height="200"></div>
-          <div class="text4">
-            <h1>Armaan Malik</h1>
-            
-          </div>
-        </a>
-        </div>
-        
-        
-    </div>
-
-    
-    <div class="cover5">
-        <div class="subcover5">
-      
-        </div>
-      
-        <div class="cover-image5">
-            <a href="https://open.spotify.com/album/6t6xffp18j87wZRLXOwHa7">
-          <img src="sn.jpg" width="200" height="200"></div>
-          <div class="text5">
-            <h1>Sonu Nigam</h1>
-            
-          </div>
-        </a>
-        </div>
-        
-        
-    </div>
-      
-
-
-
 </body>
 </html>
